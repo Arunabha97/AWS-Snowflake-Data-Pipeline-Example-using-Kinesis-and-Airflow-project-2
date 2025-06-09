@@ -2,4 +2,4 @@
 /myvenv
 /snowflakedatapipeline_project-2.pem
 /Code/.idea/
-/Code/snowflake_connection
+/Code/snowflake_connection.py
