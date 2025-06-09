@@ -1,0 +1,17 @@
+{
+  "cloudwatch.emitMetrics": true,
+  "firehose.endpoint": "firehose.us-east-1.amazonaws.com",
+
+  "flows": [
+    {
+      "filePattern": "/tmp/orders.csv*",
+      "deliveryStream": "ordersSnowflake",
+      "initialPosition": "START_OF_FILE"
+    },
+    {
+      "filePattern": "/tmp/customers.csv*",
+      "deliveryStream": "customer_data_firehose",
+      "initialPosition": "START_OF_FILE"
+    }
+  ]
+}
